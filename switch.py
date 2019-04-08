@@ -23,7 +23,6 @@ class Switch:
 
     def receive_data_packet(self, data):
         self.packet = data
-        #print('packet ' + str(self.packet))
         print('Switch received packet ' + str(self.packet) + ' from ' + self.devices[self.packet[0]-1].device_name)
 
     def set_priority(self, packet1, packet2):

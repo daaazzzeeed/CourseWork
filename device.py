@@ -25,7 +25,7 @@ class Device:
         return serv_pack
 
     def wait_for_permission(self, reply):
-        """Waits until obtaining permission from end-system"""
+        """Waits until obtaining permission from switch"""
         if reply == self.PERMISSION_GRANTED:
             return True
         elif reply == self.PERMISSION_DENIED:
