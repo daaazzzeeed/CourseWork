@@ -1,0 +1,1 @@
+DEVICES_NUMBER = 5

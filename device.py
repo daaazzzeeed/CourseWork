@@ -1,4 +1,5 @@
 import random
+import constants
 
 
 class Device:
@@ -11,9 +12,9 @@ class Device:
     PERMISSION_DENIED = [1, 0, 1]
     ASK_FOR_PERMISSION = [0, -1]
 
-    def __init__(self, device_type='device_'):
+    def __init__(self, device_name='device_'):
         """Creates device with given name or with name device_[device_counter]"""
-        self.device_type = device_type + str(self.device_counter+1)
+        self.device_name = device_name + str(self.device_counter + 1)
         self.__class__.device_counter += 1
         self.device_number = self.__class__.device_counter
 
@@ -34,9 +35,9 @@ class Device:
 
     def generate_data_packet(self):
         """Generates packet specifying data"""
-        data = [random.randint(0, 1) for i in range(5)]
+        data = [random.randint(0, 1) for i in range(constants.DEVICES_NUMBER)]
         data[0] = self.device_number
-        send_to = random.randint(0, 2)
+        send_to = random.randint(1, constants.DEVICES_NUMBER)
         data[1] = send_to
         return data
 
