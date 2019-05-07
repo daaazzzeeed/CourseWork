@@ -4,9 +4,8 @@ import constants
 
 class Device:
     """Specifies device in a network"""
-    device_counter = 0  # counts class instances
-    device_number = 0  # specifies device number
     packet = None
+    device_number = None
 
     PERMISSION_GRANTED = [1, 1, 0]
     PERMISSION_DENIED = [1, 0, 1]
@@ -14,13 +13,17 @@ class Device:
 
     def __init__(self, device_name='device_'):
         """Creates device with given name or with name device_[device_counter]"""
-        self.device_name = device_name + str(self.device_counter + 1)
-        self.__class__.device_counter += 1
-        self.device_number = self.__class__.device_counter
+        self.device_name = device_name + str(constants.DEVICE_COUNTER + 1)
+        constants.DEVICE_COUNTER += 1
+        self.device_number = constants.DEVICE_COUNTER
+
 
     def generate_service_packet(self):
         """Generates service packet asking for permission"""
-        self.ASK_FOR_PERMISSION[0] = self.device_number
+        if constants.DEVICE_COUNTER != 0:
+            self.ASK_FOR_PERMISSION[0] = constants.DEVICE_COUNTER 
+        else:
+            self.ASK_FOR_PERMISSION[0] = 1
         serv_pack = self.ASK_FOR_PERMISSION
         return serv_pack
 
@@ -35,7 +38,7 @@ class Device:
 
     def generate_data_packet(self):
         """Generates packet specifying data"""
-        data = [random.randint(0, 1) for i in range(constants.DEVICES_NUMBER)]
+        data = [random.randint(0, 10) for i in range(constants.PACKET_LENGTH)]
         data[0] = self.device_number
         send_to = random.randint(1, constants.DEVICES_NUMBER)
         data[1] = send_to
