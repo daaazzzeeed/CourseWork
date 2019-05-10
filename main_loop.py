@@ -3,10 +3,13 @@ import switch
 import constants
 import random
 import threading
-import time
+import datetime
+import os
 
 number_of_devices = [i for i in range(3, 100, 2)]
 result = []  # stores list of responses, device names, device numbers
+path = os.getcwd() + '/results.txt'
+print(path)
 
 
 def request_permission(device_num, devices_list, switch_):
@@ -44,6 +47,11 @@ def handle_responses(devices_list, switch_):
 
 elapsed_time = 0  # pseudo time
 max_devices = 0
+
+results_file = open(path, 'w')
+results_file.write('Test time: {time}'.format(time=str(datetime.datetime.now())).split('.')[0])
+results_file.write('\n')
+
 for i in range(len(number_of_devices)):
     try:
         elapsed_time = 0
@@ -52,10 +60,15 @@ for i in range(len(number_of_devices)):
         Switch = switch.Switch(devices)
         constants.DEVICE_COUNTER = 0
         constants.DEVICES_NUMBER = number_of_devices[i]
-        print('TEST NO {n}, devices: {number_of_devices}'
-        .format(n=i+1, number_of_devices=constants.DEVICES_NUMBER))
+        test_string = 'TEST NO {n}, devices: {number_of_devices}'.format(n=i+1,
+                                                                         number_of_devices=constants.DEVICES_NUMBER)
+        results_file.write(test_string)
+        print(test_string)
+        results_file.write('\n')
         obtain_responses(devices, Switch)
-        print('*********************[Beginning of exchange cycle]***************\n')
+        begin = '*********************[Beginning of exchange cycle]***************\n'
+        print(begin)
+        results_file.write(begin)
         elapsed_time += len(devices)*1*10**-5  # time to obtain data from N devices
         elapsed_time += 2*10**-4  # switch receives data
         elapsed_time += 5*10**-4  # switch processes data
@@ -65,17 +78,35 @@ for i in range(len(number_of_devices)):
             receiver = data[1]
             packet = data[2]
             
-            print('Packet : {packet} has been received by {receiver}'
-            .format(packet=str(packet), receiver=receiver.device_name))
-            print('[elapsed time: {0:.5f} sec.]'.format(elapsed_time))
+            received_str = 'Packet : {packet} has been received by {receiver}'.format(packet=str(packet),
+                                                                                      receiver=receiver.device_name)
+            print(received_str)
+            results_file.write(received_str)
+            results_file.write('\n')
+            elapsed_str = '[elapsed time: {0:.5f} sec.]'.format(elapsed_time)
+            print(elapsed_str)
             print()
+            results_file.write(elapsed_str)
+            results_file.write('\n')
             elapsed_time += 2*10**-4
+        end = '*********************[End of exchange cycle]*********************\n'
+        print(end)
+        results_file.write(end)
+        results_file.write('\n')
         if elapsed_time > 5 * 10**-3:
             max_devices = number_of_devices[i] - 1
             break
-        print('*********************[End of exchange cycle]*********************\n')
+        
     except KeyboardInterrupt:
         print('\nProgram has been terminated')
-print('Maximum devices in network: {max_devices}'.format(max_devices=max_devices))
+maximum_devices_str = 'Maximum devices in network: {max_devices}'.format(max_devices=max_devices)
+print(maximum_devices_str)
+results_file.write(maximum_devices_str)
+results_file.write('\n')
+results_file.close()
+
+results_file = open(path, 'r')
+for line in results_file:
+    print(line)
 
 

@@ -1,0 +1,282 @@
+Test time: 2019-05-10 16:07:07
+TEST NO 1, devices: 3
+*********************[Beginning of exchange cycle]***************
+Packet : [1, 3, 10] has been received by device_3
+[elapsed time: 0.00093 sec.]
+Packet : [2, 2, 8] has been received by device_2
+[elapsed time: 0.00113 sec.]
+Packet : [3, 2, 1] has been received by device_2
+[elapsed time: 0.00133 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 2, devices: 5s
+*********************[Beginning of exchange cycle]***************
+Packet : [5, 1, 8] has been received by device_1
+[elapsed time: 0.00095 sec.]
+Packet : [4, 3, 5] has been received by device_3
+[elapsed time: 0.00115 sec.]
+Packet : [2, 1, 10] has been received by device_1
+[elapsed time: 0.00135 sec.]
+Packet : [1, 3, 5] has been received by device_3
+[elapsed time: 0.00155 sec.]
+Packet : [3, 3, 8] has been received by device_3
+[elapsed time: 0.00175 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 3, devices: 7
+*********************[Beginning of exchange cycle]***************
+Packet : [7, 7, 7] has been received by device_7
+[elapsed time: 0.00097 sec.]
+Packet : [3, 7, 7] has been received by device_7
+[elapsed time: 0.00117 sec.]
+Packet : [2, 7, 2] has been received by device_7
+[elapsed time: 0.00137 sec.]
+Packet : [5, 5, 4] has been received by device_5
+[elapsed time: 0.00157 sec.]
+Packet : [6, 1, 10] has been received by device_1
+[elapsed time: 0.00177 sec.]
+Packet : [1, 7, 4] has been received by device_7
+[elapsed time: 0.00197 sec.]
+Packet : [4, 3, 6] has been received by device_3
+[elapsed time: 0.00217 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 4, devices: 9
+*********************[Beginning of exchange cycle]***************
+Packet : [4, 8, 7] has been received by device_8
+[elapsed time: 0.00099 sec.]
+Packet : [6, 5, 2] has been received by device_5
+[elapsed time: 0.00119 sec.]
+Packet : [5, 5, 10] has been received by device_5
+[elapsed time: 0.00139 sec.]
+Packet : [1, 4, 1] has been received by device_4
+[elapsed time: 0.00159 sec.]
+Packet : [8, 9, 9] has been received by device_9
+[elapsed time: 0.00179 sec.]
+Packet : [2, 6, 4] has been received by device_6
+[elapsed time: 0.00199 sec.]
+Packet : [3, 6, 8] has been received by device_6
+[elapsed time: 0.00219 sec.]
+Packet : [7, 7, 10] has been received by device_7
+[elapsed time: 0.00239 sec.]
+Packet : [9, 1, 2] has been received by device_1
+[elapsed time: 0.00259 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 5, devices: 11
+*********************[Beginning of exchange cycle]***************
+Packet : [4, 8, 1] has been received by device_8
+[elapsed time: 0.00101 sec.]
+Packet : [8, 5, 7] has been received by device_5
+[elapsed time: 0.00121 sec.]
+Packet : [1, 11, 1] has been received by device_11
+[elapsed time: 0.00141 sec.]
+Packet : [3, 1, 6] has been received by device_1
+[elapsed time: 0.00161 sec.]
+Packet : [9, 1, 8] has been received by device_1
+[elapsed time: 0.00181 sec.]
+Packet : [5, 4, 5] has been received by device_4
+[elapsed time: 0.00201 sec.]
+Packet : [2, 11, 1] has been received by device_11
+[elapsed time: 0.00221 sec.]
+Packet : [7, 6, 9] has been received by device_6
+[elapsed time: 0.00241 sec.]
+Packet : [6, 5, 7] has been received by device_5
+[elapsed time: 0.00261 sec.]
+Packet : [10, 7, 4] has been received by device_7
+[elapsed time: 0.00281 sec.]
+Packet : [11, 7, 9] has been received by device_7
+[elapsed time: 0.00301 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 6, devices: 13
+*********************[Beginning of exchange cycle]***************
+Packet : [2, 7, 2] has been received by device_7
+[elapsed time: 0.00103 sec.]
+Packet : [1, 5, 3] has been received by device_5
+[elapsed time: 0.00123 sec.]
+Packet : [10, 3, 4] has been received by device_3
+[elapsed time: 0.00143 sec.]
+Packet : [11, 13, 0] has been received by device_13
+[elapsed time: 0.00163 sec.]
+Packet : [8, 2, 9] has been received by device_2
+[elapsed time: 0.00183 sec.]
+Packet : [5, 4, 1] has been received by device_4
+[elapsed time: 0.00203 sec.]
+Packet : [9, 1, 10] has been received by device_1
+[elapsed time: 0.00223 sec.]
+Packet : [6, 3, 8] has been received by device_3
+[elapsed time: 0.00243 sec.]
+Packet : [7, 9, 2] has been received by device_9
+[elapsed time: 0.00263 sec.]
+Packet : [4, 6, 2] has been received by device_6
+[elapsed time: 0.00283 sec.]
+Packet : [3, 11, 10] has been received by device_11
+[elapsed time: 0.00303 sec.]
+Packet : [13, 5, 3] has been received by device_5
+[elapsed time: 0.00323 sec.]
+Packet : [12, 2, 10] has been received by device_2
+[elapsed time: 0.00343 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 7, devices: 15
+*********************[Beginning of exchange cycle]***************
+Packet : [3, 5, 8] has been received by device_5
+[elapsed time: 0.00105 sec.]
+Packet : [15, 7, 5] has been received by device_7
+[elapsed time: 0.00125 sec.]
+Packet : [10, 11, 2] has been received by device_11
+[elapsed time: 0.00145 sec.]
+Packet : [2, 1, 8] has been received by device_1
+[elapsed time: 0.00165 sec.]
+Packet : [13, 10, 10] has been received by device_10
+[elapsed time: 0.00185 sec.]
+Packet : [1, 13, 3] has been received by device_13
+[elapsed time: 0.00205 sec.]
+Packet : [4, 13, 6] has been received by device_13
+[elapsed time: 0.00225 sec.]
+Packet : [5, 15, 6] has been received by device_15
+[elapsed time: 0.00245 sec.]
+Packet : [6, 2, 8] has been received by device_2
+[elapsed time: 0.00265 sec.]
+Packet : [7, 10, 10] has been received by device_10
+[elapsed time: 0.00285 sec.]
+Packet : [8, 12, 3] has been received by device_12
+[elapsed time: 0.00305 sec.]
+Packet : [9, 10, 6] has been received by device_10
+[elapsed time: 0.00325 sec.]
+Packet : [12, 1, 6] has been received by device_1
+[elapsed time: 0.00345 sec.]
+Packet : [11, 7, 10] has been received by device_7
+[elapsed time: 0.00365 sec.]
+Packet : [14, 14, 9] has been received by device_14
+[elapsed time: 0.00385 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 8, devices: 17
+*********************[Beginning of exchange cycle]***************
+Packet : [1, 10, 1] has been received by device_10
+[elapsed time: 0.00107 sec.]
+Packet : [4, 17, 8] has been received by device_17
+[elapsed time: 0.00127 sec.]
+Packet : [3, 5, 5] has been received by device_5
+[elapsed time: 0.00147 sec.]
+Packet : [15, 13, 2] has been received by device_13
+[elapsed time: 0.00167 sec.]
+Packet : [10, 3, 3] has been received by device_3
+[elapsed time: 0.00187 sec.]
+Packet : [2, 12, 8] has been received by device_12
+[elapsed time: 0.00207 sec.]
+Packet : [13, 8, 1] has been received by device_8
+[elapsed time: 0.00227 sec.]
+Packet : [7, 12, 10] has been received by device_12
+[elapsed time: 0.00247 sec.]
+Packet : [14, 13, 8] has been received by device_13
+[elapsed time: 0.00267 sec.]
+Packet : [11, 8, 3] has been received by device_8
+[elapsed time: 0.00287 sec.]
+Packet : [9, 16, 1] has been received by device_16
+[elapsed time: 0.00307 sec.]
+Packet : [12, 13, 5] has been received by device_13
+[elapsed time: 0.00327 sec.]
+Packet : [6, 11, 6] has been received by device_11
+[elapsed time: 0.00347 sec.]
+Packet : [8, 16, 8] has been received by device_16
+[elapsed time: 0.00367 sec.]
+Packet : [16, 14, 0] has been received by device_14
+[elapsed time: 0.00387 sec.]
+Packet : [5, 3, 2] has been received by device_3
+[elapsed time: 0.00407 sec.]
+Packet : [17, 6, 0] has been received by device_6
+[elapsed time: 0.00427 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 9, devices: 19
+*********************[Beginning of exchange cycle]***************
+Packet : [2, 9, 5] has been received by device_9
+[elapsed time: 0.00109 sec.]
+Packet : [1, 19, 10] has been received by device_19
+[elapsed time: 0.00129 sec.]
+Packet : [8, 17, 7] has been received by device_17
+[elapsed time: 0.00149 sec.]
+Packet : [6, 8, 3] has been received by device_8
+[elapsed time: 0.00169 sec.]
+Packet : [12, 10, 6] has been received by device_10
+[elapsed time: 0.00189 sec.]
+Packet : [18, 9, 0] has been received by device_9
+[elapsed time: 0.00209 sec.]
+Packet : [13, 17, 8] has been received by device_17
+[elapsed time: 0.00229 sec.]
+Packet : [7, 12, 4] has been received by device_12
+[elapsed time: 0.00249 sec.]
+Packet : [15, 10, 0] has been received by device_10
+[elapsed time: 0.00269 sec.]
+Packet : [3, 11, 3] has been received by device_11
+[elapsed time: 0.00289 sec.]
+Packet : [11, 7, 9] has been received by device_7
+[elapsed time: 0.00309 sec.]
+Packet : [19, 6, 9] has been received by device_6
+[elapsed time: 0.00329 sec.]
+Packet : [5, 15, 4] has been received by device_15
+[elapsed time: 0.00349 sec.]
+Packet : [4, 11, 10] has been received by device_11
+[elapsed time: 0.00369 sec.]
+Packet : [17, 3, 6] has been received by device_3
+[elapsed time: 0.00389 sec.]
+Packet : [9, 4, 1] has been received by device_4
+[elapsed time: 0.00409 sec.]
+Packet : [10, 3, 10] has been received by device_3
+[elapsed time: 0.00429 sec.]
+Packet : [14, 12, 4] has been received by device_12
+[elapsed time: 0.00449 sec.]
+Packet : [16, 9, 6] has been received by device_9
+[elapsed time: 0.00469 sec.]
+*********************[End of exchange cycle]*********************
+
+TEST NO 10, devices: 21
+*********************[Beginning of exchange cycle]***************
+Packet : [2, 2, 10] has been received by device_2
+[elapsed time: 0.00111 sec.]
+Packet : [7, 16, 8] has been received by device_16
+[elapsed time: 0.00131 sec.]
+Packet : [10, 12, 2] has been received by device_12
+[elapsed time: 0.00151 sec.]
+Packet : [4, 21, 0] has been received by device_21
+[elapsed time: 0.00171 sec.]
+Packet : [1, 13, 7] has been received by device_13
+[elapsed time: 0.00191 sec.]
+Packet : [14, 19, 6] has been received by device_19
+[elapsed time: 0.00211 sec.]
+Packet : [16, 11, 6] has been received by device_11
+[elapsed time: 0.00231 sec.]
+Packet : [11, 1, 2] has been received by device_1
+[elapsed time: 0.00251 sec.]
+Packet : [19, 1, 10] has been received by device_1
+[elapsed time: 0.00271 sec.]
+Packet : [8, 3, 10] has been received by device_3
+[elapsed time: 0.00291 sec.]
+Packet : [3, 19, 5] has been received by device_19
+[elapsed time: 0.00311 sec.]
+Packet : [20, 20, 9] has been received by device_20
+[elapsed time: 0.00331 sec.]
+Packet : [15, 4, 7] has been received by device_4
+[elapsed time: 0.00351 sec.]
+Packet : [6, 18, 2] has been received by device_18
+[elapsed time: 0.00371 sec.]
+Packet : [17, 17, 5] has been received by device_17
+[elapsed time: 0.00391 sec.]
+Packet : [13, 2, 4] has been received by device_2
+[elapsed time: 0.00411 sec.]
+Packet : [9, 12, 6] has been received by device_12
+[elapsed time: 0.00431 sec.]
+Packet : [18, 7, 10] has been received by device_7
+[elapsed time: 0.00451 sec.]
+Packet : [5, 11, 8] has been received by device_11
+[elapsed time: 0.00471 sec.]
+Packet : [12, 2, 6] has been received by device_2
+[elapsed time: 0.00491 sec.]
+Packet : [21, 21, 3] has been received by device_21
+[elapsed time: 0.00511 sec.]
+*********************[End of exchange cycle]*********************
+
+Maximum devices in network: 20
