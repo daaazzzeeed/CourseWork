@@ -11,7 +11,7 @@ class Device:
     PERMISSION_DENIED = [1, 0, 1]
     ASK_FOR_PERMISSION = [0, -1]
 
-    def __init__(self, device_name='device_'):
+    def __init__(self, device_name='устройство_'):
         """Creates device with given name or with name device_[device_counter]"""
         self.device_name = device_name + str(constants.DEVICE_COUNTER + 1)
         constants.DEVICE_COUNTER += 1
