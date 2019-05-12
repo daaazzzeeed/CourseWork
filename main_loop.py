@@ -87,7 +87,8 @@ for i in range(len(number_of_devices)):
             print(received_str)
             results_file.write(received_str)
             results_file.write('\n')
-            elapsed_str = '[Затраченное время: {0:.5f} сек.]\n'.format(elapsed_time)
+            elapsed_time_in_msecs = elapsed_time * 1000
+            elapsed_str = '[Затраченное время: {0:1.2f} мс.]\n'.format(elapsed_time_in_msecs)
             print(elapsed_str)
             print()
             results_file.write(elapsed_str)
